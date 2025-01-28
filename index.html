@@ -5,65 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Forex & Crypto Signal Store</title>
+    <title>KINSTIFY</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-gray-100">
     <!-- Navbar -->
-    <nav class="bg-blue-900 fixed top-0 w-full z-10">
+    <nav class="fixed top-0 left-0 w-full bg-transparent z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="#" class="text-white text-3xl font-bold">SignalStore</a>
+           
             <ul class="flex space-x-8">
-                <li><a href="#signals" class="text-white hover:text-yellow-500">Signals</a></li>
-                <li><a href="#contact" class="text-white hover:text-yellow-500">Contact</a></li>
-                <li>
-                    <button id="cart-button" class="relative text-white focus:outline-none">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span id="cart-count" class="absolute -top-2 -right-2 bg-red-500 text-white rounded-full px-2">0</span>
-                    </button>
-                </li>
+                <li><a href="#crypto-signals" class="text-white hover:text-yellow-500">Crypto Signals</a></li>
+                <li><a href="#paid-signals" class="text-white hover:text-yellow-500">Paid Signals</a></li>
+                <li><a href="#mentorship" class="text-white hover:text-yellow-500">Mentorship</a></li>
+                
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="bg-cover bg-center h-screen" style="background-image: url('images/trading-bg.jpg');">
+    <header class="bg-cover bg-center h-screen" style="background-image: url('images/trading1-bg.jpg');">
         <div class="bg-black bg-opacity-50 h-full flex flex-col justify-center items-center text-white">
+            <img src="images/logo.png" alt="KINSTIFYLogo" class="mb-5 w-32 h-32">
             <h1 class="text-6xl font-bold">Master Forex & Crypto Signals</h1>
             <p class="mt-4 text-2xl">Get precise and profitable signals from top traders</p>
-            <a href="#signals" class="mt-6 px-8 py-3 bg-yellow-500 rounded-full hover:bg-yellow-600">Explore Signals</a>
+            <a href="#crypto-signals" class="mt-6 px-8 py-3 bg-yellow-500 rounded-full hover:bg-yellow-600">Explore Signals</a>
         </div>
     </header>
 
-    <!-- Signals Section -->
-    <section id="signals" class="py-20">
+    <!-- Crypto Signals Section -->
+    <section id="crypto-signals" class="py-20">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center mb-10">Our Trading Signals</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
                 <!-- Signal Card 1 -->
                 <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-2xl font-bold mb-4">Forex Signal Package</h3>
+                    <a href="" class="mycustom_a">
+                        <h3 class="text-2xl font-bold mb-4">Forex Signal Package</h3>
                     <p>Daily forex signals with an 80% success rate.</p>
-                    <p class="mt-2 text-lg text-gray-700 font-bold">$49.99</p>
-                    <button onclick="addToCart('Forex Signal Package', 49.99)" class="mt-4 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Add to Cart</button>
+                    </a>
                 </div>
+
                 <!-- Signal Card 2 -->
                 <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-2xl font-bold mb-4">Crypto Signal Bundle</h3>
+                    <a href="" class="mycustom_a">
+                        <h3 class="text-2xl font-bold mb-4">Crypto Signal Bundle</h3>
                     <p>Real-time crypto signals for major coins.</p>
-                    <p class="mt-2 text-lg text-gray-700 font-bold">$29.99</p>
-                    <button onclick="addToCart('Crypto Signal Bundle', 29.99)" class="mt-4 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Add to Cart</button>
+                    </a>
                 </div>
+
                 <!-- Signal Card 3 -->
                 <div class="bg-white rounded-lg shadow-lg p-6">
+                   <a href="" class="mycustom_a">
                     <h3 class="text-2xl font-bold mb-4">Premium Forex + Crypto</h3>
-                    <p>Full access to premium forex and crypto signals.</p>
-                    <p class="mt-2 text-lg text-gray-700 font-bold">$79.99</p>
-                    <button onclick="addToCart('Premium Forex + Crypto', 79.99)" class="mt-4 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Add to Cart</button>
-                </div>
+                    <p>Full access to premium forex and crypto signals.</p> 
+                   </a>            
             </div>
+
         </div>
     </section>
 
