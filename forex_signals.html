@@ -14,13 +14,28 @@
     <!-- Navbar -->
     <nav class="w-full bg-transparent z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <ul class="flex space-x-8">
-                <li><a href="index.html" class="text-gold hover:text-blue-500">KINSTIFY</a></li>
-                <li><a href="crypto_signals.html" class="text-gold hover:text-blue-500">Crypto Signals</a></li>
-                <li><a href="paid_signals.html" class="text-gold hover:text-blue-500">Paid Signals</a></li>
-                <li><a href="forex_signals.html" class="text-gold hover:text-blue-500">ForexSignals</a></li>
-                <li><a href="mentorship.html" class="text-gold hover:text-blue-500">Mentorship</a></li>
+            <!-- KINSTIFY logo on the left -->
+            <div>
+                <a href="index.html" class="text-gold hover:text-blue-500">KINSTIFY</a>
+            </div>
+            <!-- Mobile Menu Toggle Button in black -->
+            <button class="block md:hidden text-black focus:outline-none" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- Navigation links, hidden on mobile -->
+            <ul class="hidden md:flex space-x-8 bg-blue-500 p-2 rounded-lg">
+                <li><a href="crypto_signals.html" class="text-white hover:text-blue-300">Crypto Signals</a></li>
+                <li><a href="paid_signals.html" class="text-white hover:text-blue-300">Paid Signals</a></li>
+                <li><a href="forex_signals.html" class="text-white hover:text-blue-300">Forex Signals</a></li>
+                <li><a href="mentorship.html" class="text-white hover:text-blue-300">Mentorship</a></li>
             </ul>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden flex-col items-center space-y-4 bg-blue-500 p-4 rounded-lg md:hidden" id="mobile-menu">
+            <a href="crypto_signals.html" class="text-white hover:text-blue-300">Crypto Signals</a>
+            <a href="paid_signals.html" class="text-white hover:text-blue-300">Paid Signals</a>
+            <a href="forex_signals.html" class="text-white hover:text-blue-300">Forex Signals</a>
+            <a href="mentorship.html" class="text-white hover:text-blue-300">Mentorship</a>
         </div>
     </nav>
 
@@ -62,8 +77,16 @@
             <p>&copy; 2025 KINSTIFY. All rights reserved.</p>
         </div>
     </footer>
-    
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 
 </html>
