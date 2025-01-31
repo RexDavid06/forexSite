@@ -14,39 +14,43 @@
     <!-- Navbar -->
     <nav class="w-full bg-transparent z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <!-- KINSTIFY logo on the left -->
-            <div>
-                <a href="index.html" class="text-gold hover:text-blue-500">KINSTIFY</a>
+            <!-- KINSTIFY logo  -->
+            <div class="flex justify-center">
+                <a href="index.html">
+                    <img src="images/kinstifyLogo.jpg" alt="KINSTIFY Logo" class="h-16 sm:h-20"> <!-- Adjust size as needed -->
+                </a>
             </div>
+
             <!-- Mobile Menu Toggle Button in black -->
             <button class="block md:hidden text-black focus:outline-none" id="menu-toggle">
                 <i class="fas fa-bars"></i>
             </button>
             <!-- Navigation links, hidden on mobile -->
-            <ul class="hidden md:flex space-x-8 bg-blue-500 p-2 rounded-lg">
-                <li><a href="crypto_signals.html" class="text-white hover:text-blue-300">Crypto Signals</a></li>
-                <li><a href="paid_signals.html" class="text-white hover:text-blue-300">Paid Signals</a></li>
-                <li><a href="forex_signals.html" class="text-white hover:text-blue-300">Forex Signals</a></li> 
-                <li><a href="mentorship.html" class="text-white hover:text-blue-300">Mentorship</a></li>
+            <ul class="hidden md:flex space-x-8 p-2 rounded-lg">
+                <li><a href="crypto_signals.html" class="text-black hover:text-blue-300">Crypto Signals</a></li>
+                <li><a href="paid_signals.html" class="text-black hover:text-blue-300">Paid Signals</a></li>
+                <li><a href="forex_signals.html" class="text-black hover:text-blue-300">Forex Signals</a></li>
+                <li><a href="mentorship.html" class="text-black hover:text-blue-300">Mentorship</a></li>
             </ul>
         </div>
         <!-- Mobile Menu -->
-        <div class="hidden flex-col items-center space-y-4 bg-blue-500 p-4 rounded-lg md:hidden" id="mobile-menu">
-            <a href="crypto_signals.html" class="text-white hover:text-blue-300">Crypto Signals</a>
-            <a href="paid_signals.html" class="text-white hover:text-blue-300">Paid Signals</a>
-            <a href="forex_signals.html" class="text-white hover:text-blue-300">Forex Signals</a>
-            <a href="mentorship.html" class="text-white hover:text-blue-300">Mentorship</a>
+        <div class="hidden flex-col items-center space-y-4 p-4 rounded-lg md:hidden" id="mobile-menu">
+            <a href="crypto_signals.html" class="text-black hover:text-blue-300">Crypto Signals</a>
+            <a href="paid_signals.html" class="text-black hover:text-blue-300">Paid Signals</a>
+            <a href="forex_signals.html" class="text-black hover:text-blue-300">Forex Signals</a>
+            <a href="mentorship.html" class="text-black hover:text-blue-300">Mentorship</a>
         </div>
     </nav>
+    
 
     <!-- Paid Signals Section -->
-    <section class="py-20">
+    <section class="py-20 mt-24"> <!-- Increased mt-24 for more space -->
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center mb-10">Our Paid Trading Signals</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-white rounded-lg shadow-lg p-6">
                     <h3 class="text-2xl font-bold mb-4">Silver Package</h3>
-                    <p>Access our reliable forex signals at a budget-friendly price</p>
+                    <p>Access our reliable forex signals at a budget-friendly price.</p>
                 </div>
                 <div class="bg-white rounded-lg shadow-lg p-6">
                     <h3 class="text-2xl font-bold mb-4">Gold Package</h3>
@@ -71,9 +75,11 @@
     <script>
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
-
+    
         menuToggle.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+            mobileMenu.classList.add('flex-col', 'absolute', 'right-0', 'top-16', 'w-1/2'); /* Align to the right side */
         });
     </script>
 

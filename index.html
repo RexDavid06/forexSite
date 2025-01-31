@@ -103,11 +103,14 @@
     <script>
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
-
+    
         menuToggle.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+            mobileMenu.classList.add('flex-col', 'absolute', 'right-0', 'top-16', 'w-1/2'); // Align to the right side
         });
     </script>
+    
 </body>
 
 </html>

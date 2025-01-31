@@ -1,5 +1,10 @@
 .mycustom_a {
     text-decoration: none;
     color: black;
+    transition: color 0.3s ease;
+}
 
+.mycustom_a:hover,
+.mycustom_a:focus {
+    color: blue;  /* Change to any hover color */
 }
