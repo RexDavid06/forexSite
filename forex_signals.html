@@ -10,63 +10,62 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-cover bg-center min-h-screen" style="background-image: url('images/trading9-bg.jpg');">
     <!-- Navbar -->
     <nav class="w-full bg-transparent z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <!-- KINSTIFY logo  -->
             <div class="flex justify-center">
                 <a href="index.html">
-                    <img src="images/kinstifyLogo.jpg" alt="KINSTIFY Logo" class="h-16 sm:h-20"> <!-- Adjust size as needed -->
+                    <img src="images/kinstifyPlainLogo.png" alt="KINSTIFY Logo" class="h-16 sm:h-20"> <!-- Adjust size as needed -->
                 </a>
             </div>
 
-            <!-- Mobile Menu Toggle Button in black -->
-            <button class="block md:hidden text-black focus:outline-none" id="menu-toggle">
+            <!-- Mobile Menu Toggle Button in white -->
+            <button class="block md:hidden text-white focus:outline-none" id="menu-toggle">
                 <i class="fas fa-bars"></i>
             </button>
             <!-- Navigation links, hidden on mobile -->
             <ul class="hidden md:flex space-x-8 p-2 rounded-lg">
-                <li><a href="crypto_signals.html" class="text-black hover:text-blue-300">Crypto Signals</a></li>
-                <li><a href="paid_signals.html" class="text-black hover:text-blue-300">Paid Signals</a></li>
-                <li><a href="forex_signals.html" class="text-black hover:text-blue-300">Forex Signals</a></li>
-                <li><a href="mentorship.html" class="text-black hover:text-blue-300">Mentorship</a></li>
+                <li><a href="crypto_signals.html" class="text-white hover:text-blue-300">Crypto Signals</a></li>
+                <li><a href="paid_signals.html" class="text-white hover:text-blue-300">Paid Signals</a></li>
+                <li><a href="forex_signals.html" class="text-white hover:text-blue-300">Forex Signals</a></li>
+                <li><a href="mentorship.html" class="text-white hover:text-blue-300">Mentorship</a></li>
             </ul>
         </div>
         <!-- Mobile Menu -->
         <div class="hidden flex-col items-center space-y-4 p-4 rounded-lg md:hidden" id="mobile-menu">
-            <a href="crypto_signals.html" class="text-black hover:text-blue-300">Crypto Signals</a>
-            <a href="paid_signals.html" class="text-black hover:text-blue-300">Paid Signals</a>
-            <a href="forex_signals.html" class="text-black hover:text-blue-300">Forex Signals</a>
-            <a href="mentorship.html" class="text-black hover:text-blue-300">Mentorship</a>
+            <a href="crypto_signals.html" class="text-white hover:text-blue-300">Crypto Signals</a>
+            <a href="paid_signals.html" class="text-white hover:text-blue-300">Paid Signals</a>
+            <a href="forex_signals.html" class="text-white hover:text-blue-300">Forex Signals</a>
+            <a href="mentorship.html" class="text-white hover:text-blue-300">Mentorship</a>
         </div>
     </nav>
-    
 
     <!-- Forex Signals Section -->
-    <section class="py-20 mt-24">
+    <section class="py-20 mt-12">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-10">Our Forex Signals</h2>
+            <h2 class="text-4xl font-bold text-center text-white mb-10">Our Forex Signals</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Daily Forex Signals Card -->
-                <div class="bg-white rounded-lg shadow-lg p-6">
+                <div class="bg-white bg-opacity-80 rounded-lg shadow-lg p-6">
                     <h3 class="text-2xl font-bold mb-4">Daily Forex Signals</h3>
-                    <p>Recieve accurate daily signals for major forex pairs</p>
+                    <p>Receive accurate daily signals for major forex pairs.</p>
                 </div>
                 <!-- Weekly Forex Signals Card -->
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-2xl font-bold mb-4">Weekly Forex  Analysis</h3>
-                    <p>Get weekly  market analysis and trading insights from experts.</p>
+                <div class="bg-white bg-opacity-80 rounded-lg shadow-lg p-6">
+                    <h3 class="text-2xl font-bold mb-4">Weekly Forex Analysis</h3>
+                    <p>Get weekly market analysis and trading insights from experts.</p>
                 </div>
                 <!-- Scalping Strategies Card -->
-                <div class="bg-white rounded-lg shadow-lg p-6">
+                <div class="bg-white bg-opacity-80 rounded-lg shadow-lg p-6">
                     <h3 class="text-2xl font-bold mb-4">Scalping Strategies</h3>
                     <p>Access real-time scalping signals to make quick trades.</p>
                 </div>
-                 <!-- Long-Term Trade Signals Card -->
-                 <div class="bg-white rounded-lg shadow-lg p-6">
+                <!-- Long-Term Trade Signals Card -->
+                <div class="bg-white bg-opacity-80 rounded-lg shadow-lg p-6">
                     <h3 class="text-2xl font-bold mb-4">Long-Term Trade Signals</h3>
-                    <p>Recieve reliable signals for long-term forrex trades.</p>
+                    <p>Receive reliable signals for long-term forex trades.</p>
                 </div>
             </div>
         </div>
@@ -87,7 +86,7 @@
         menuToggle.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
             mobileMenu.classList.toggle('flex');
-            mobileMenu.classList.add('flex-col', 'absolute', 'right-0', 'top-20', 'w-1/2'); /* Adjust top for better spacing */
+            mobileMenu.classList.add('flex-col', 'absolute', 'right-0', 'top-20', 'w-1/2');
         });
     </script>
 
