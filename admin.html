@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin - Create Forex Signal Post</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto p-6">
+        <h2 class="text-3xl font-bold text-center mb-8">Create a New Forex Signal Post</h2>
+
+        <form action="/submit-post" method="POST" enctype="multipart/form-data" class="bg-white p-8 shadow-md rounded-lg">
+            <!-- Signal Title -->
+            <div class="mb-6">
+                <label for="signal-title" class="block mb-2 font-bold">Signal Title:</label>
+                <input type="text" id="signal-title" name="title" class="w-full px-4 py-2 border rounded-lg" placeholder="Enter the title of the signal" required>
+            </div>
+
+            <!-- Signal Description -->
+            <div class="mb-6">
+                <label for="signal-description" class="block mb-2 font-bold">Description:</label>
+                <textarea id="signal-description" name="description" class="w-full px-4 py-2 border rounded-lg" rows="5" placeholder="Enter the description of the signal" required></textarea>
+            </div>
+
+            <!-- Signal Category -->
+            <div class="mb-6">
+                <label for="signal-category" class="block mb-2 font-bold">Category:</label>
+                <select id="signal-category" name="category" class="w-full px-4 py-2 border rounded-lg" required>
+                    <option value="crypto">Crypto</option>
+                    <option value="forex">Forex</option>
+                    <option value="stocks">Stocks</option>
+                </select>
+            </div>
+
+            <!-- Upload Image (optional) -->
+            <div class="mb-6">
+                <label for="signal-image" class="block mb-2 font-bold">Upload Image (optional):</label>
+                <input type="file" id="signal-image" name="image" class="w-full px-4 py-2 border rounded-lg">
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center">
+                <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-bold hover:bg-blue-700">Post Signal</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
